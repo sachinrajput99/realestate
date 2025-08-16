@@ -2,24 +2,11 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = "";
-const TEMPLATE_ID = "";
-const PUBLIC_KEY = "";
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-// template
-{
-  /* <h2>📬 New Contact Form Submission</h2>
 
-<p><strong>Full Name:</strong> {{name}}</p>
-<p><strong>Email:</strong> {{email}}</p>
-<p><strong>Phone:</strong> {{phone}}</p>
-<p><strong>Subject:</strong> {{subject}}</p>
-<p><strong>Message:</strong></p>
-<p>{{message}}</p>
-
-<hr />
-<p>Submitted via your website contact form.</p> */
-}
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
