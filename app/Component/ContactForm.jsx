@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-// const SERVICE_ID = "service_4frs03d";
-// const TEMPLATE_ID = "template_wmd95pb";
-// const PUBLIC_KEY = "FNf4ncIGJ_4xPLzSj";
+const SERVICE_ID = "";
+const TEMPLATE_ID = "";
+const PUBLIC_KEY = "";
 
 // template
 {
