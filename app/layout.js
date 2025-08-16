@@ -1,33 +1,12 @@
-// import "./globals.css";
-
-// export const metadata = {
-//   title: "Basera Properties — Premium Real Estate & Dream Homes",
-//   description:
-//     "Find your dream property with Basera Properties. Premium real estate listings, luxury homes, expert agents. 120K+ deals closed, 1500+ houses sold.",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body>{children}</body>
-//     </html>
-//   );
-// }
-
 import "./globals.css";
 
 // --------------------
 // 🔹 SEO + Meta Config
 // --------------------
 export const metadata = {
-  // 👇 Title jo Google search aur browser tab me show hoga
   title: "Basera Properties — Premium Real Estate & Dream Homes",
-
-  // 👇 Short description (Google snippet ke liye)
   description:
     "Find your dream property with Basera Properties. Premium real estate listings, luxury homes, expert agents. 120K+ deals closed, 1500+ houses sold.",
-
-  // 👇 Keywords (SEO ke liye)
   keywords: [
     "real estate",
     "luxury homes",
@@ -36,17 +15,15 @@ export const metadata = {
     "premium properties",
     "real estate agent",
   ],
-
-  // 👇 OpenGraph (FB, WhatsApp, LinkedIn share ke liye)
   openGraph: {
     title: "Basera Properties — Premium Real Estate & Dream Homes",
     description:
       "Find your dream property with Basera Properties. Premium real estate listings, luxury homes, expert agents. 120K+ deals closed, 1500+ houses sold.",
-    url: "https://your-domain.com", // 👉 apna actual domain daalna
+    url: "https://baseraproperties.in",
     siteName: "Basera Properties",
     images: [
       {
-        url: "https://your-domain.com/og-image.jpg", // 👉 apna OG image URL daalna
+        url: "https://baseraproperties.in/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Basera Properties",
@@ -55,20 +32,16 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-
-  // 👇 Twitter (jab koi tumhari site X/Twitter pe share kare)
   twitter: {
     card: "summary_large_image",
     title: "Basera Properties — Premium Real Estate & Dream Homes",
     description:
       "Find your dream property with Basera Properties. Premium real estate listings, luxury homes, expert agents.",
-    images: ["https://your-domain.com/og-image.jpg"], // 👉 apna OG image URL daalna
+    images: ["https://baseraproperties.in/og-image.jpg"],
   },
-
-  // 👇 Canonical URL (SEO duplicate issue avoid karne ke liye)
-  metadataBase: new URL("https://your-domain.com"), // 👉 apna actual domain
+  metadataBase: new URL("https://baseraproperties.in"),
   alternates: {
-    canonical: "https://your-domain.com", // 👉 apna actual domain
+    canonical: "https://baseraproperties.in",
   },
 };
 
@@ -79,37 +52,67 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* ✅ Favicon */}
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+
+        {/* ✅ Mobile Meta */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Basera Properties" />
+        <meta name="theme-color" content="#0d6efd" />
+        <meta name="robots" content="index, follow" />
+
         {/* --------------------
-            🔹 JSON-LD Structured Data (Google ke liye)
-            Isme apni business info update karna h
+            🔹 Google Analytics Pixel (replace G-XXXXXXXXXX)
+        -------------------- */}
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
+
+        {/* --------------------
+            🔹 JSON-LD Structured Data
         -------------------- */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "RealEstateAgent", // 👉 Business type (yaha RealEstateAgent hai)
-              name: "Basera Properties", // 👉 apne business ka naam
-              url: "https://your-domain.com", // 👉 apna domain
-              logo: "https://your-domain.com/logo.png", // 👉 apna logo ka link
+              "@type": "RealEstateAgent",
+              name: "Basera Properties",
+              url: "https://baseraproperties.in",
+              logo: "https://baseraproperties.in/favicon.png",
               description:
                 "Premium real estate agency specializing in luxury homes and exceptional properties. 120K+ deals closed, 1500+ houses sold.",
               address: {
                 "@type": "PostalAddress",
-                addressCountry: "US", // 👉 Apne country ka ISO code (e.g., IN for India, US for America)
+                addressCountry: "IN",
               },
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer service",
-                telephone: "+1-800-555-1234", // 👉 apna phone number daalna
-                email: "info@your-domain.com", // 👉 apna email daalna
+                telephone: "+91-9810214410",
+                email: "baseraproperty@gmail.com",
                 availableLanguage: "English",
               },
-              areaServed: "United States", // 👉 apna service area (e.g., India, Global)
+              areaServed: "India",
+              sameAs: [
+                "https://x.com/baseraproperty",
+                "https://www.facebook.com/profile.php?id=61567005412129",
+                "https://www.instagram.com/bas.eraproperty/",
+                "https://www.linkedin.com/in/rajeev-sachdeva-5a47396b/",
+              ],
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.9", // 👉 apni avg rating
-                reviewCount: "1500", // 👉 total reviews
+                ratingValue: "4.9",
+                reviewCount: "1500",
               },
             }),
           }}

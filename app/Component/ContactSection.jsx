@@ -59,7 +59,7 @@ export default function ContactSection() {
                     C-29, BPTP Parklands
                   </p>
                   <p className="text-slate-600 leading-[1.625rem]">
-                    Sector-85, Faridabad
+                    Sector-85, Faridabad, Haryana
                   </p>
                 </div>
               </div>

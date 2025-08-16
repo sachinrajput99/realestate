@@ -36,7 +36,7 @@ export default function Footer() {
                 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
                 ></path>
               </svg>
-              <span className="text-slate-300">Rajiv Sachedva</span>
+              <span className="text-slate-300">Rajiv Sachedeva</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
               <svg
