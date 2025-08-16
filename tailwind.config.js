@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "#f97316", // or your brand orange
+        primary: "rgb(9 59 91)", // or hex: '#093B5B'
       },
     },
   },
