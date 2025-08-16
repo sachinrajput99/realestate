@@ -89,7 +89,7 @@ export default function Footer() {
               <span className="text-slate-300">
                 C-29, BPTP Parklands
                 <br />
-                Sector-85, Faridabad
+                Sector-85, Faridabad, Haryana
               </span>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function Footer() {
 
             {/* Twitter */}
             <a
-              href="#twitter"
+              href="https://x.com/baseraproperty"
               className="w-10 h-10 bg-[#063957] text-white rounded-full flex items-center justify-center text-slate-600 hover:bg-accent hover:text-white transition-all duration-300"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

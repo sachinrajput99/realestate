@@ -8,6 +8,7 @@ import FAQSection from "./Component/FAQSection";
 import ContactSection from "./Component/ContactSection";
 import Footer from "./Component/Footer";
 import Navbar from "./Component/Navbar";
+import WhatsappButton from "./Component/WhatsappButton";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <FAQSection />
       <ContactSection />
       <Footer />
+      <WhatsappButton/>
     </>
   );
 }

@@ -171,7 +171,7 @@ export default function ContactSection() {
 
                 {/* Twitter */}
                 <a
-                  href="#twitter"
+                  href="https://x.com/baseraproperty"
                   className="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center text-slate-600 hover:bg-accent hover:text-white transition-all duration-300"
                 >
                   <svg
