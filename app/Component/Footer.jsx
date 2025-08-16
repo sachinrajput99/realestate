@@ -150,6 +150,7 @@ export default function Footer() {
               Be the first to know about new properties, market insights, and
               exclusive deals.
             </p>
+            
             <form className="space-y-3">
               <input
                 type="email"
