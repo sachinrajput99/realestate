@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {/* Mobile Slide-In Menu */}
       <div
-        className={`fixed  top-0 right-0 h-full  w-full max-w-sm bg-[#08314B] z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed  top-0 right-0 h-full  w-full  bg-[#08314B] z-50 transform transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -111,7 +111,7 @@ const Navbar = () => {
         <nav className="flex flex-col gap-6 mt-4 text-white px-6 text-base">
           <Link
             href="/about-us"
-           className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
+            className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
           >
             About
           </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
 
           <Link
             href="/contact-us"
-          className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
+            className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
           >
             Contact
           </Link>
