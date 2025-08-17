@@ -30,7 +30,7 @@ const Navbar = () => {
             {[, "Properties", "Services", "FAQs"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/#${item.toLowerCase()}`}
                 className="uppercase tracking-wide hover:text-black/70 transition-colors"
               >
                 {item}
@@ -119,7 +119,7 @@ const Navbar = () => {
           {["Properties", "Services", "FAQs"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
