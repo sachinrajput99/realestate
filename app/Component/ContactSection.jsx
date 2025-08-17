@@ -143,7 +143,7 @@ export default function ContactSection() {
                     Working Hours
                   </h5>
                   <p className="text-slate-600 leading-[1.625rem]">
-                    Mon - Sat: 9:00 AM - 8:00 PM
+                    Mon - Sun: 9:00 AM - 8:00 PM
                   </p>
                 </div>
               </div>

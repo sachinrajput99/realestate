@@ -156,13 +156,13 @@ export default function AboutSection() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#visit"
+              href="#contact"
               className="bg-orange-500 text-white font-semibold px-6 py-3 rounded hover:bg-orange-600 transition"
             >
               Schedule Visit
             </a>
             <a
-              href="#amenities"
+              href="#services"
               className="border border-slate-300 px-6 py-3 font-semibold text-slate-700 rounded hover:bg-slate-50 transition"
             >
               View Amenities

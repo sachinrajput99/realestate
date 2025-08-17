@@ -8,8 +8,6 @@ export default function HeroSection() {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/80"></div>
 
-    
-
       {/* Hero Content */}
       <div className="relative z-10 flex-1 flex items-center">
         <div className="mx-auto px-6 md:px-20 w-full">
@@ -25,12 +23,18 @@ export default function HeroSection() {
               trusted agents in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-accent hover:bg-accent/90 text-white px-8 py-4 font-medium transition-colors">
+              <a
+                href="#properties"
+                className="bg-accent hover:bg-accent/90 text-white px-8 py-4 font-medium transition-colors"
+              >
                 Browse Now
-              </button>
-              <button className="border border-white/30 text-white px-8 py-4 hover:bg-white/10 transition-colors">
+              </a>
+              <a
+                href="#services"
+                className="border border-white/30 text-white px-8 py-4 hover:bg-white/10 transition-colors"
+              >
                 See Details
-              </button>
+              </a>
             </div>
           </div>
         </div>
