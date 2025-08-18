@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
             🔹 Google Analytics Pixel (replace G-XXXXXXXXXX)
         -------------------- */}
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-XXXXXXXXXX');
             `,
           }}
-        />
+        /> */}
 
         {/* --------------------
             🔹 JSON-LD Structured Data
