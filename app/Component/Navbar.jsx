@@ -37,7 +37,7 @@ const Navbar = () => {
               </a>
             ))}
             <Link
-              href="/contact-us"
+              href="/contact"
               className="uppercase tracking-wide hover:text-black/70 transition-colors"
             >
               Contact
@@ -128,7 +128,7 @@ const Navbar = () => {
           ))}
 
           <Link
-            href="/contact-us"
+            href="/contact"
             className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
           >
             Contact

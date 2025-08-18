@@ -124,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href="/contact"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   Contact
