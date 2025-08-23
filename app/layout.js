@@ -1,5 +1,5 @@
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // --------------------
 // 🔹 SEO + Meta Config
