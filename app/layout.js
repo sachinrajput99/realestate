@@ -1,5 +1,6 @@
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // --------------------
 // 🔹 SEO + Meta Config
 // --------------------
@@ -138,6 +139,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>{children}</body>
       <GoogleAnalytics gaId="G-NXWRRSN9HJ" />
+      <SpeedInsights />
     </html>
   );
 }
