@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
         {/* --------------------
       🔹 Google Analytics (GA4)
   -------------------- */}
-        {/* <script
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NXWRRSN9HJ"
         ></script>
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
         gtag('config', 'G-NXWRRSN9HJ');
       `,
           }}
-        /> */}
+        />
 
         {/* --------------------
             🔹 JSON-LD Structured Data
@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>{children}</body>
-      <GoogleAnalytics gaId="G-NXWRRSN9HJ" />
+     
       <SpeedInsights />
     </html>
   );
